@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="http://mkjy1108.dothome.co.kr/shinhwa">
+    <meta property="og:title" content="제주신화월드">
+    <meta property="og:type" content="웹사이트">
+    <meta property="og:image" content="http://mkjy1108.dothome.co.kr/shinhwa/images/logo.png">
+    <meta property="og:description" content="제주신화월드 홈페이지에 오신 것을 환영합니다.">
+    <title>제주신화월드 - by MK</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- skip menu -->
+    <ul class="skipMenu">
+        <li><a href="#skipNav">메인메뉴 바로가기</a></li>
+        <li><a href="#skipContainer">본문 바로가기</a></li>
+    </ul>
+
+    <!-- Header -->
+    <header>
+        <div class="headTop">
+            <div class="headLeft">
+                <a href="#void">Reservation</a>
+                <div class="resMenu">
+                    <ul class="btn clearFix">
+                        <li class="active"><a href="#">Hotel & Resort</a></li>
+                        <li><a href="#void">Adventure</a></li>
+                    </ul>
+                    <div class="tabList">
+                        <div class="hotelRsv">
+                            <ul>
+                                <li>
+                                    <span>Room's</span>
+                                    <select name="hotel" id="hotel">
+                                        <option>메리어트관</option>
+                                        <option>서머셋</option>
+                                        <option>신화관</option>
+                                        <option>랜딩관</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span>Check-In</span>
+                                    <input type="date">
+                                </li>
+                                <li>
+                                    <span>Check-Out</span>
+                                    <input type="date">
+                                </li>
+                            </ul>
+                            <div class="tabBtn">
+                                <a href="continue.html">예약</a>
+                                <a href="#void" class="rsvCancel">취소</a>
+                            </div>
+                        </div>
+                        <div class="attraRsv">
+                            <ul>
+                                <li>
+                                    <span>Attraction</span>
+                                    <select name="attra" id="attra">
+                                        <option>신화워터파크</option>
+                                        <option>신화테마파크</option>
+                                        <option>신화액티비티</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span>Check-In</span>
+                                    <input type="date">
+                                </li>
+                            </ul>
+                            <div class="tabBtn">
+                                <a href="continue.html">예약</a>
+                                <a href="#void" class="rsvCancel">취소</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headRight">
+                <a href="login.html" class="login">
+                    로그인/회원가입
+                </a>
+                <a href="#void" class="pcSearchBtn">
+                    <i class="fas fa-search"></i>
+                </a>
+                <div class="pcSearch">
+                    <input type="text" name="search" id="search">
+                    <a href="#void">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div id="Sns">
+                    <a href="#void">SNS</a>
+                    <ul class="snsChannel">
+                        <li>
+                            <a href="#void"><img src="images/facebook.png" alt="페이스북"><span>페이스북</span></a>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="images/instagram.png" alt="인스타그램"><span>인스타그램</span></a>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="images/youtube.png" alt="유튜브"><span>유튜브</span></a>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="images/naverblog.png" alt="네이버블로그"><span>블로그</span></a>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="images/kakao.png" alt="카카오톡"><span>카카오톡</span></a>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="images/waibo.png" alt="웨이보"><span>waibo</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="headBottom">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="제주신화월드">
+            </a>
+            <div class="hamB">
+                <a href="#void"></a>
+            </div>              
+        </div>
+    </header>
+
+    <!-- Nav -->
+    <nav>
+        <h1 class="blind">blind</h1>
+        <div class="wrap">
+            <h2 class="blind">blind</h2>
+            <div class="navTop">
+                <div class="navLeft">
+                    <a href="index.html" class="navLogo">
+                        <img src="images/logo.png" alt="제주신화월드">
+                    </a>
+                    <div id="Close">
+                        <a href="#void">
+                            <img src="images/close.png" alt="닫기">
+                        </a>
+                    </div>
+                </div>
+                <div class="navRight">
+                    <div class="navLogin">
+                        <a href="login.html">
+                            로그인/회원가입
+                        </a>
+                    </div>
+                    <div class="navSearch">
+                        <input type="text">
+                        <a href="#void"><i class="fas fa-search"></i></a>
+                    </div>
+                    <div id="navSns">
+                        <a href="#void">SNS</a>
+                        <ul class="navSnsChannel">
+                            <li>
+                                <a href="#void"><img src="images/facebook.png" alt="페이스북"><span>페이스북</span></a>
+                            </li>
+                            <li>
+                                <a href="#void"><img src="images/instagram.png" alt="인스타그램"><span>인스타그램</span></a>
+                            </li>
+                            <li>
+                                <a href="#void"><img src="images/youtube.png" alt="유튜브"><span>유튜브</span></a>
+                            </li>
+                            <li>
+                                <a href="#void"><img src="images/naverblog.png" alt="네이버블로그"><span>블로그</span></a>
+                            </li>
+                            <li>
+                                <a href="#void"><img src="images/kakao.png" alt="카카오톡"><span>카카오톡</span></a>
+                            </li>
+                            <li>
+                                <a href="#void"><img src="images/waibo.png" alt="웨이보"><span>waibo</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="navBottom">
+                <li class="gnb">
+                    <div class="gnbImg">
+                        <a href="continue.html">
+                            <img src="images/nav01.jpg" alt="restmenu">
+                        </a>
+                    </div>
+                    <div>
+                        <h3><a href="continue.html">Rest</a></h3>
+                        <ul class="lnb">
+                            <li><a href="continue.html">메리어트관</a></li>
+                            <li><a href="continue.html">서머셋</a></li>
+                            <li><a href="continue.html">신화관</a></li>
+                            <li><a href="continue.html">랜딩관</a></li>
+                            <li><a href="continue.html">예약하기</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb">
+                    <div class="gnbImg">
+                        <a href="continue.html">
+                            <img src="images/nav02.jpg" alt="funmenu">
+                        </a>
+                    </div>
+                    <div>
+                        <h3><a href="continue.html">Fun</a></h3>
+                        <ul class="lnb">
+                            <li><a href="continue.html">신화테마파크</a></li>
+                            <li><a href="continue.html">신화워터파크</a></li>
+                            <li><a href="continue.html">신화액티비티</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb">
+                    <div class="gnbImg">
+                        <a href="continue.html">
+                            <img src="images/nav03.jpg" alt="eatmenu">
+                        </a>
+                    </div>
+                    <div>
+                        <h3><a href="continue.html">Eat</a></h3>
+                        <ul class="lnb">
+                            <li><a href="continue.html">시그니처</a></li>
+                            <li><a href="continue.html">캐주얼</a></li>
+                            <li><a href="continue.html">카페&스낵</a></li>
+                            <li><a href="continue.html">바&펍</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb">
+                    <div class="gnbImg">
+                        <a href="continue.html">
+                            <img src="images/nav04.jpg" alt="lifemenu">
+                        </a>
+                    </div>
+                    <div>
+                        <h3><a href="continue.html">Life</a></h3>
+                        <ul class="lnb">
+                            <li><a href="continue.html">쇼핑</a></li>
+                            <li><a href="continue.html">뷰티&웰니스</a></li>
+                            <li><a href="continue.html">엔터테인먼트</a></li>
+                            <li><a href="continue.html">편의점</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb">
+                    <div class="gnbImg">
+                        <a href="continue.html">
+                            <img src="images/nav05.jpg" alt="etcmenu">
+                        </a>
+                    </div>
+                    <div>
+                        <h3><a href="continue.html">Etc</a></h3>
+                        <ul class="lnb">
+                            <li><a href="continue.html">미팅&행사</a></li>
+                            <li><a href="continue.html">이벤트</a></li>
+                            <li><a href="continue.html">신화빌라스</a></li>
+                            <li><a href="continue.html">제휴/멤버십</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PC Container & footer-->
+    <div class="container" id="fullpage">
+        <div class="section section01">
+            <video playsinline="" autoplay="" muted="" loop="">
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+            <h2>Welcome to JEJU Shinhwa World!</h2>
+        </div>
+        <div class="section section02">
+            <div class="left">
+                <span>Hotel & Resort</span>
+                <h2>제주 최대 규모의<br>프리미엄 호텔&리조트!</h2>
+                <p>제주의 곶자왈 숲속에 밭담 형태로 자리 잡은 4개의 호텔&리조트는 글로벌 호텔 브랜드의 차별화된 서비스를 제공하는 메리어트관, 새로운 경험을 선사하는 라이프스타일 호텔 신화관, 합리적인 가격으로 누리는 5성급 프리미엄 랜딩관과 럭셔리 패밀리 베케이션을 경험할 수 있는 서머셋까지, 다양한 니즈를 충족시키는 호텔&리조트가 한 곳에 있습니다.</p>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <img src="images/main02.jpg" alt="어드벤처" style="opacity: 0;">
+                        <div class="bg"></div>
+                    </li>
+                    <li>
+                        <img src="images/main01.jpg" alt="휴식공간">
+                        <div class="link">
+                            <a href="continue.html">자세히보기</a>
+                            <a href="continue.html">예약하기</a>
+                            <b>01</b>
+                        </div>
+                        <div class="bg"></div>
+                    </li>
+                    <li>
+                        <img src="images/main02.jpg" alt="어드벤처">
+                        <div class="bg"></div>
+                    </li>
+                </ul>
+                <div class="number">
+                    <p><b>SHINHWA</b><span>1 / 4</span></p>
+                    <div class="line"><span></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section02">
+            <div class="left">
+                <span style="background-color: #36b2e3;">Adventure</span>
+                <h2>오직 신화월드에서만<br>경험할 수 있는 특별함!</h2>
+                <p>제주신화월드는 이름 그대로 단순한 숙박 시설이 아니라 테마파크, 워터파크, 다이닝 및 쇼핑공간, 컨벤션 센터까지 제대로 갖추고 있는 제주 여행의 새로운 목적지가 되었습니다. 가족, 연인, 친구와 함께하는 흥미로운 여행을 계획해보세요!</p>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <img src="images/main01.jpg" alt="휴식공간">
+                        <span class="bg"></span>
+                    </li>
+                    <li>
+                        <img src="images/main02.jpg" alt="어드벤처">
+                        <div class="link">
+                            <a href="continue.html">자세히보기</a>
+                            <b>02</b>
+                        </div>
+                        <div class="bg"></div>
+                    </li>
+                    <li>
+                        <img src="images/main03.jpg" alt="다이닝">
+                        <div class="bg"></div>
+                    </li>
+                </ul>
+                <div class="number">
+                    <p><b>SHINHWA</b><span>2 / 4</span></p>
+                    <div class="line"><span style="height: 50%;"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section02">
+            <div class="left">
+                <span style="background-color: #ed3b5c;">Dinning</span>
+                <h2>여행 컨셉에 따라<br>색다른 '맛'을 느껴보세요!</h2>
+                <p>무한한 미식의 세계를 체험하세요. 한식, 중식, 일식, 다양한 스타일의 요리는 물론 하이엔드 레스토랑부터 캐주얼 레스토랑까지 색다른 경험을 선사하는 제주신화월드 다이닝! 곳곳에 자리 잡은 신화적인 '제주의 맛'을 놓치지 마세요.</p>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <img src="images/main02.jpg" alt="어드벤쳐">
+                        <span class="bg"></span>
+                    </li>
+                    <li>
+                        <img src="images/main03.jpg" alt="다이닝">
+                        <div class="link">
+                            <a href="continue.html">자세히보기</a>
+                            <b>03</b>
+                        </div>
+                        <span class="bg"></span>
+                    </li>
+                    <li>
+                        <img src="images/main04.jpg" alt="라이프스타일">
+                        <span class="bg"></span>
+                    </li>
+                </ul>
+                <div class="number">
+                    <p><b>SHINHWA</b><span>3 / 4</span></p>
+                    <div class="line"><span style="height: 75%;"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section02">
+            <div class="left">
+                <span style="background-color: #86c56b;">Life Style</span>
+                <h2>쇼핑부터 엔터까지<br>당신의 삶이 이곳에!</h2>
+                <p>제주신화월드에서는 일상조차 특별한 여행이 됩니다. 제주 최고의 전문가들이 선사하는 스파, 미용, 뷰티 케어부터 쇼핑까지 한 곳에서 가능합니다. 또한 남녀노소 모두가 즐길 수 있는 엔터테인먼트 시설들은 세대 공감의 추억을 만들어 드립니다. 일상을 더욱 윤택하게 하는 제주신화월드의 프리미엄 라이프스타일을 경험해 보세요.</p>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <img src="images/main03.jpg" alt="다이닝">
+                        <span class="bg"></span>
+                    </li>
+                    <li>
+                        <img src="images/main04.jpg" alt="라이프스타일">
+                        <div class="link">
+                            <a href="continue.html">자세히보기</a>
+                            <b>04</b>
+                        </div>
+                        <span class="bg"></span>
+                    </li>
+                    <li>
+                        <img src="images/main01.jpg" alt="휴식공간" style="opacity: 0;">
+                    </li>
+                </ul>
+                <div class="number">
+                    <p><b>SHINHWA</b><span>4 / 4</span></p>
+                    <div class="line"><span style="height: 100%;"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section03">
+            <div class="bg"></div>
+            <div class="left">
+                <div class="box">
+                    <span>100% 즐겨보자!</span>
+                    <h3>나에게 딱 맞는<br/>월드투어 찾기!</h3>
+                    <p>
+                        가족, 연인, 친구와 함께<br/>
+                        행복한 추억 만들어가세요~!
+                    </p>
+                    <ul>
+                        <li class="travel"><a href="#void" class="travel01 clickOn">#로맨틱 커플여행</a></li>
+                        <li class="travel"><a href="#void" class="travel02">#첫가족여행</a></li>
+                        <li class="travel"><a href="#void" class="travel03">#아이들의 천국</a></li>
+                        <li class="travel"><a href="#void" class="travel04">#연인과의 기념일</a></li>
+                        <li class="travel"><a href="#void" class="travel05">#온가족 행복</a></li>
+                        <li class="travel"><a href="#void" class="travel06">#부모님 효도여행</a></li>
+                        <li class="travel"><a href="#void" class="travel07">#추억쌓기</a></li>
+                        <li class="travel"><a href="#void" class="travel08">#힐링데이트</a></li>
+                    </ul>
+                    <div class="circle">
+                        <div>
+                            <img src="images/rotate01.png" alt="스카이풀">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <h3 class="rTitle">스카이풀</h3>
+                    <p class="rSub">낮에도, 밤에도 아름다운 이곳에서<br>행복을 찾아가세요!</p>
+                    <a href="continue.html">자세히 보기</a>
+                </div>
+            </div>
+        </div>
+        <div class="section section04">
+            <h3>SHINHWA's Memory!</h3>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sw-inner">
+                            <img src="images/memory01.jpg" alt="신화메모리01">
+                            <div class="text01">
+                                <a href="continue.html">
+                                    <span class="swTitle titleBg1">친구</span>
+                                    <span class="swSub">친구들과 함께 특별한 날을 기념하기 위해 특별한 여행을 계획했습니다! 제주 여행을 계획하면서 신화월드는 꼭 가봐야할 리스트 중 하나였습니다</span>
+                                </a>
+                            </div>
+                            <div class="text02">
+                                <a href="continue.html">
+                                    <span class="meTitle">우정여행</span>
+                                    <span class="meSub">특별한 날을 기념하며 친구들과의 추억쌓기!</span>
+                                    <img src="images/plus.png" alt="더보기">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sw-inner">
+                            <img src="images/memory02.jpg" alt="신화메모리02">
+                            <div class="text01">
+                                <a href="continue.html">
+                                    <span class="swTitle titleBg2">연인</span>
+                                    <span class="swSub">첫 커플여행이다보니 함께 해보고 싶은게 많았어요. 수영장과 로맨틱한 저녁식사 등이 가능한 곳을 찾던 중 신화월드를 발견했습니다</span>
+                                </a>
+                            </div>
+                            <div class="text02">
+                                <a href="continue.html">
+                                    <span class="meTitle">커플여행</span>
+                                    <span class="meSub">멋진 노을을 감상할 수 있는 스카이풀에서 연인과 소중한 추억만들기!</span>
+                                    <img src="images/plus.png" alt="더보기">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sw-inner">
+                            <img src="images/memory03.jpg" alt="신화메모리03">
+                            <div class="text01">
+                                <a href="continue.html">
+                                    <span class="swTitle titleBg3">모임</span>
+                                    <span class="swSub">이번 워크샵을 통해 답답한 회사에서 벗어나 모처럼 즐겁고 행복한 시간을 보낸 것 같습니다</span>
+                                </a>
+                            </div>
+                            <div class="text02">
+                                <a href="continue.html">
+                                    <span class="meTitle">워크샵</span>
+                                    <span class="meSub">답답한 사무실을 벗어나 동료들과 행복한 시간 보내기!</span>
+                                    <img src="images/plus.png" alt="더보기">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sw-inner">
+                            <img src="images/memory04.jpg" alt="신화메모리04">
+                            <div class="text01">
+                                <a href="continue.html">
+                                    <span class="swTitle titleBg4">가족</span>
+                                    <span class="swSub">워터파크와 커다란 놀이동산까지 함께 있어 아이들에겐 그야말로 천국처럼 느껴졌을 것 같네요!</span>
+                                </a>
+                            </div>
+                            <div class="text02">
+                                <a href="continue.html">
+                                    <span class="meTitle">가족여행</span>
+                                    <span class="meSub">남녀노소 모두가 행복한 신화월드 여행기!</span>
+                                    <img src="images/plus.png" alt="더보기">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sw-inner">
+                            <img src="images/memory05.jpg" alt="신화메모리05">
+                            <div class="text01">
+                                <a href="continue.html">
+                                    <span class="swTitle titleBg5">특별</span>
+                                    <span class="swSub">신화월드 안에 정말 모든게 갖추어져 있어 밖에 나가지 않고도 많은 걸 즐길 수 있어서 좋았어요!</span>
+                                </a>
+                            </div>
+                            <div class="text02">
+                                <a href="continue.html">
+                                    <span class="meTitle">특별한 여행</span>
+                                    <span class="meSub">볼링부터 게임까지! 모든게 다 있는 신화월드에서 안락한 여행되세요!</span>
+                                    <img src="images/plus.png" alt="더보기">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="section fp-auto-height">
+            <div class="footWrap">
+                <div class="footTop">
+                    <p class="footLogo">
+                        <img src="images/footLogo.png" alt="푸터로고">
+                    </p>
+                    <ul class="company">
+                        <li><a href="continue.html">회사소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                        <li><a href="continue.html">FAQ</a></li>
+                        <li><a href="continue.html">지원센터</a></li>
+                        <li><a href="continue.html">공지사항</a></li>
+                        <li><a href="continue.html">인재채용</a></li>
+                        <li><a href="continue.html">뉴스</a></li>
+                        <li><a href="continue.html">입점문의</a></li>
+                        <li><a href="continue.html">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div class="footBottom clearFix">
+                    <ul class="footMenu">
+                        <li><a href="continue.html">개인정보처리방침</a></li>
+                        <li><a href="continue.html">면책고지</a></li>
+                        <li><a href="continue.html">홈페이지이용약관</a></li>
+                        <li><a href="continue.html">신화리워드 이용 약관</a></li>
+                        <li><a href="continue.html">결산공고</a></li>
+                    </ul>
+                    <address>
+                        <p>람정제주개발주식회사 | 대한민국 제주특별자치도 서귀포시 안덕면 녹차분재로 217 (우편번호 63521)</p>
+                        <span>대표이사: 린촉추 | 사업자등록번호: 616-86-09829 | 통신판매업신고번호: 2017-안덕면-0024</span>
+                        <span class="copyright">Copyright&copy;Landing Jeju Development Co.Ltd. All Rights Reserved</span>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Mobile -->
+    <div class="container mo">
+        <div class="section01">
+            <video playsinline="" autoplay="" muted="" loop="">
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+            <h2>Welcome to JEJU Shinhwa WORLD!</h2>
+        </div>
+        <div class="section02">
+            <ul>
+                <li>
+                    <div class="top">
+                        <span>Hotel & Resort</span>
+                        <img src="images/main01.jpg" alt="휴식공간">
+                    </div>
+                    <h2>제주 최대 규모의<br>프리미엄 호텔&리조트!</h2>
+                    <div class="bottom one">
+                        <a href="continue.html">자세히보기</a>
+                        <a href="continue.html">예약하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <span>Adventure</span>
+                        <img src="images/main02.jpg" alt="어드벤처">
+                    </div>
+                    <h2>오직 신화월드에서만<br>경험할 수 있는 특별함!</h2>
+                    <div class="bottom">
+                        <a href="continue.html">자세히보기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <span>Dinning</span>
+                        <img src="images/main03.jpg" alt="다이닝">
+                    </div>
+                    <h2>여행 컨셉에 따라<br>색다른 '맛'을 느껴보세요!</h2>
+                    <div class="bottom">
+                        <a href="continue.html">자세히보기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <span>Life Style</span>
+                        <img src="images/main04.jpg" alt="라이프스타일">
+                    </div>
+                    <h2>쇼핑부터 엔터까지<br>당신의 삶이 이곳에!</h2>
+                    <div class="bottom">
+                        <a href="continue.html">자세히보기</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="section03">
+            <div class="bg"></div>
+
+                <div class="left">
+                    <div class="box">
+                        <span>100% 즐겨보자!</span>
+                        <h3>나에게 딱 맞는 월드투어찾기!</h3>
+                        <p>
+                            가족, 연인, 친구와 함께
+                            행복한 추억 만들어가세요~!
+                        </p>
+                        <ul>
+                            <li class="travel"><a href="#void" class="travel01">#로맨틱 커플여행</a></li>
+                            <li class="travel"><a href="#void" class="travel02">#첫가족여행</a></li>
+                            <li class="travel"><a href="#void" class="travel03">#아이들의 천국</a></li>
+                            <li class="travel"><a href="#void" class="travel04">#연인과의 기념일</a></li>
+                            <li class="travel"><a href="#void" class="travel05">#온가족 행복</a></li>
+                            <li class="travel"><a href="#void" class="travel06">#부모님 효도여행</a></li>
+                            <li class="travel"><a href="#void" class="travel07">#추억쌓기</a></li>
+                            <li class="travel"><a href="#void" class="travel08">#힐링데이트</a></li>
+                        </ul>
+                        <div class="circle">
+                            <div>
+                                <img src="images/rotate01.png" alt="스카이풀">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div>
+                        <h3 class="rTitle">스카이풀</h3>
+                        <p class="rSub">낮에도, 밤에도 아름다운 이곳에서<br>행복을 찾아가세요!</p>
+                        <a href="continue.html">자세히 보기</a>
+                    </div>
+                </div>
+
+        </div>
+        <div class="section04">
+            <h3>SHINHWA's Memory!</h3>
+            <ul>
+                <li>
+                    <a href="continue.html" class="review01">
+                        <img src="images/icon01_hover.png" alt="전체보기아이콘">
+                        <span><b>Review</b>ALL</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="continue.html" class="review02">
+                        <img src="images/icon02.png" alt="가족아이콘">
+                        <span><b>가족</b>Family</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="continue.html" class="review03">
+                        <img src="images/icon03.png" alt="친구아이콘">
+                        <span><b>친구</b>friend</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="continue.html" class="review04">
+                        <img src="images/icon04.png" alt="연인아이콘">
+                        <span><b>연인</b>Couple</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="continue.html" class="review05">
+                        <img src="images/icon05.png" alt="특별한아이콘">
+                        <span><b>특별한</b>Special</span>
+                    </a>
+                </li>  
+                <li>
+                    <a href="continue.html" class="review06">
+                        <img src="images/icon06.png" alt="단체아이콘">
+                        <span><b>단체</b>Group</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer class="section fp-auto-height">
+            <div class="footWrap">
+                <div class="footTop">
+                    <p class="footLogo">
+                        <img src="images/footLogo.png" alt="푸터로고">
+                    </p>
+                    <ul class="company">
+                        <li><a href="continue.html">회사소개</a></li>
+                        <li><a href="map.html">오시는길</a></li>
+                        <li><a href="continue.html">FAQ</a></li>
+                        <li><a href="continue.html">지원센터</a></li>
+                        <li><a href="continue.html">공지사항</a></li>
+                        <li><a href="continue.html">인재채용</a></li>
+                        <li><a href="continue.html">뉴스</a></li>
+                        <li><a href="continue.html">입점문의</a></li>
+                        <li><a href="continue.html">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div class="footBottom clearFix">
+                    <ul class="footMenu">
+                        <li><a href="continue.html">개인정보처리방침</a></li>
+                        <li><a href="continue.html">면책고지</a></li>
+                        <li><a href="continue.html">홈페이지이용약관</a></li>
+                        <li><a href="continue.html">신화리워드 이용 약관</a></li>
+                        <li><a href="continue.html">결산공고</a></li>
+                    </ul>
+                    <address>
+                        <p>람정제주개발주식회사 | 대한민국 제주특별자치도 서귀포시 안덕면 녹차분재로 217 (우편번호 63521)</p>
+                        <span>대표이사: 린촉추 | 사업자등록번호: 616-86-09829 | 통신판매업신고번호: 2017-안덕면-0024</span>
+                        <span class="copyright">Copyright&copy;Landing Jeju Development Co.Ltd. All Rights Reserved</span>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/plugIn.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="http://mkjy1108.dothome.co.kr/shinhwa">
+    <meta property="og:title" content="제주신화월드">
+    <meta property="og:type" content="웹사이트">
+    <meta property="og:image" content="http://mkjy1108.dothome.co.kr/shinhwa/images/logo.png">
+    <meta property="og:description" content="제주신화월드 홈페이지에 오신 것을 환영합니다.">
+    <title>제주신화월드 - by MK</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/map.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="headTop">
+            <div class="headLeft">
+                <a href="#void">Reservation</a>
+                <div class="resMenu">
+                    <ul class="btn clearFix">
+                        <li class="active"><a href="#">Hotel & Resort</a></li>
+                        <li><a href="#void">Adventure</a></li>
+                    </ul>
+                    <div class="tabList">
+                        <div class="hotelRsv">
+                            <ul>
+                                <li>
+                                    <span>Room's</span>
+                                    <select name="hotel" id="hotel">
+                                        <option>메리어트관</option>
+                                        <option>서머셋</option>
+                                        <option>신화관</option>
+                                        <option>랜딩관</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span>Check-In</span>
+                                    <input type="date">
+                                </li>
+                                <li>
+                                    <span>Check-Out</span>
+                                    <input type="date">
+                                </li>
+                            </ul>
+                            <div class="tabBtn">
+                                <a href="continue.html">예약</a>
+                                <a href="#void" class="rsvCancel">취소</a>
+                            </div>
+                        </div>
+                        <div class="attraRsv">
+                            <ul>
+                                <li>
+                                    <span>Attraction</span>
+                                    <select name="attra" id="attra">
+                                        <option>신화워터파크</option>
+                                        <option>신화테마파크</option>
+                                        <option>신화액티비티</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span>Check-In</span>
+                                    <input type="date">
+                                </li>
+                            </ul>
+                            <div class="tabBtn">
+                                <a href="continue.html">예약</a>
+                                <a href="#void" class="rsvCancel">취소</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headRight">
+                <a href="login.html" class="login">
+                    로그인/회원가입
+                </a>
+                <a href="#void" class="pcSearchBtn">
+                    <i class="fas fa-search"></i>
+                </a>
+                <div class="pcSearch">
+                    <input type="text" name="search" id="search">
+                    <a href="#void">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div id="Sns">
+                    <a href="#void">SNS</a>
+                    <ul class="snsChannel">
+                        <li>
+                            <a href="#void"><img src="images/facebook.png" alt="페이스북"><span>페이스북</span></a>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="images/instagram.png" alt="인스타그램"><span>인스타그램</span></a>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="images/youtube.png" alt="유튜브"><span>유튜브</span></a>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="images/naverblog.png" alt="네이버블로그"><span>블로그</span></a>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="images/kakao.png" alt="카카오톡"><span>카카오톡</span></a>
+                        </li>
+                        <li>
+                            <a href="#void"><img src="images/waibo.png" alt="웨이보"><span>waibo</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="headBottom">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="제주신화월드">
+            </a>
+            <div class="hamB">
+                <a href="#void"></a>
+            </div>              
+        </div>
+    </header>
+
+    <!-- Nav -->
+    <nav>
+        <h1 class="blind">blind</h1>
+        <div class="wrap">
+            <h2 class="blind">blind</h2>
+            <div class="navTop">
+                <div class="navLeft">
+                    <a href="index.html" class="navLogo">
+                        <img src="images/logo.png" alt="제주신화월드">
+                    </a>
+                    <div id="Close">
+                        <a href="#void">
+                            <img src="images/close.png" alt="닫기">
+                        </a>
+                    </div>
+                </div>
+                <div class="navRight">
+                    <div class="navLogin">
+                        <a href="login.html">
+                            로그인/회원가입
+                        </a>
+                    </div>
+                    <div class="navSearch">
+                        <input type="text">
+                        <a href="#void"><i class="fas fa-search"></i></a>
+                    </div>
+                    <div id="navSns">
+                        <a href="#void">SNS</a>
+                        <ul class="navSnsChannel">
+                            <li>
+                                <a href="#void"><img src="images/facebook.png" alt="페이스북"><span>페이스북</span></a>
+                            </li>
+                            <li>
+                                <a href="#void"><img src="images/instagram.png" alt="인스타그램"><span>인스타그램</span></a>
+                            </li>
+                            <li>
+                                <a href="#void"><img src="images/youtube.png" alt="유튜브"><span>유튜브</span></a>
+                            </li>
+                            <li>
+                                <a href="#void"><img src="images/naverblog.png" alt="네이버블로그"><span>블로그</span></a>
+                            </li>
+                            <li>
+                                <a href="#void"><img src="images/kakao.png" alt="카카오톡"><span>카카오톡</span></a>
+                            </li>
+                            <li>
+                                <a href="#void"><img src="images/waibo.png" alt="웨이보"><span>waibo</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="navBottom">
+                <li class="gnb">
+                    <div class="gnbImg">
+                        <a href="continue.html">
+                            <img src="images/nav01.jpg" alt="restmenu">
+                        </a>
+                    </div>
+                    <div>
+                        <h3><a href="continue.html">Rest</a></h3>
+                        <ul class="lnb">
+                            <li><a href="continue.html">메리어트관</a></li>
+                            <li><a href="continue.html">서머셋</a></li>
+                            <li><a href="continue.html">신화관</a></li>
+                            <li><a href="continue.html">랜딩관</a></li>
+                            <li><a href="continue.html">예약하기</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb">
+                    <div class="gnbImg">
+                        <a href="continue.html">
+                            <img src="images/nav02.jpg" alt="funmenu">
+                        </a>
+                    </div>
+                    <div>
+                        <h3><a href="continue.html">Fun</a></h3>
+                        <ul class="lnb">
+                            <li><a href="continue.html">신화테마파크</a></li>
+                            <li><a href="continue.html">신화워터파크</a></li>
+                            <li><a href="continue.html">신화액티비티</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb">
+                    <div class="gnbImg">
+                        <a href="continue.html">
+                            <img src="images/nav03.jpg" alt="eatmenu">
+                        </a>
+                    </div>
+                    <div>
+                        <h3><a href="continue.html">Eat</a></h3>
+                        <ul class="lnb">
+                            <li><a href="continue.html">시그니처</a></li>
+                            <li><a href="continue.html">캐주얼</a></li>
+                            <li><a href="continue.html">카페&스낵</a></li>
+                            <li><a href="continue.html">바&펍</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb">
+                    <div class="gnbImg">
+                        <a href="continue.html">
+                            <img src="images/nav04.jpg" alt="lifemenu">
+                        </a>
+                    </div>
+                    <div>
+                        <h3><a href="continue.html">Life</a></h3>
+                        <ul class="lnb">
+                            <li><a href="continue.html">쇼핑</a></li>
+                            <li><a href="continue.html">뷰티&웰니스</a></li>
+                            <li><a href="continue.html">엔터테인먼트</a></li>
+                            <li><a href="continue.html">편의점</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb">
+                    <div class="gnbImg">
+                        <a href="continue.html">
+                            <img src="images/nav05.jpg" alt="etcmenu">
+                        </a>
+                    </div>
+                    <div>
+                        <h3><a href="continue.html">Etc</a></h3>
+                        <ul class="lnb">
+                            <li><a href="continue.html">미팅&행사</a></li>
+                            <li><a href="continue.html">이벤트</a></li>
+                            <li><a href="continue.html">신화빌라스</a></li>
+                            <li><a href="continue.html">제휴/멤버십</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PC Container & footer-->
+    <section class="map">
+        <div class="mapTop">
+            <div class="top">
+                <img src="images/sub02_01.jpg" alt="타이틀이미지">
+            </div>
+            <div class="navi">
+                <h2>오시는 길</h2>
+            </div>
+        </div>
+        <div class="mapCenter">
+            <div class="logIn">
+                <div class="titleWrap">
+                    <p class="subTitle">welcome to JEJU Shinhwa World!</p>
+                    <p class="mainTitle">오시는 길</p>
+                </div>
+                <div id="mapLoad"></div>
+                <div class="trans">
+                    <div class="taxi">
+                        <a href="#void">택시/렌터카 이용 시</a>
+                        <p>
+                            <span>택시 이용 시</span>
+                            공항 1층 3번 게이트 앞 횡단보도를 건너면 택시탑승장이 있습니다. 평균 소요 시간은 40분 내외이며, 교통 상황에 따라 달라질 수 있습니다.
+                            <span>렌트카 이용 시</span>
+                            제주 도착 후 사전 예약한 렌트카업체를 통해 렌터카를 픽업할 수 있습니다. 평균 소요 시간은 40분 내외이며, 교통 상황에 따라 달라질 수 있습니다. 리조트 도착 시 로비에서 동승자와 짐을 먼저 하차 후 주차장으로 이동하시면 더욱 편리합니다.
+                        </p>
+                    </div>
+                    <div class="bus">
+                        <a href="#void">버스 이용 시</a>
+                        <p>
+                            <span>공항에서 출발 시</span>
+                            1. 제주공항 1층 3번 게이트 앞 버스 승강장에서 151번, 152번, 600번 버스 탑승<br>
+                            2. '동광환승정류장' 하차 후 동광환승정류장 2번(영어교육도시 방면)에서 255, 820-2, 752-2, 771-2번 버스 탑승 후 '제주신화월드' 정류장 하차<br>
+                            3. 151번 버스 탑승 시 '제주신화월드 입구'에서 하차 후 도보 15-20분 소요 (리조트 별 상이)<br>
+                            4. 신화테마파크의 경우 '신화역사공원' 다음 정류장인 '제주신화월드 테마파크' 정류장 하차
+                            <span>제주시외버스터미널 출발 시</span>
+                            제주시외버스터미널에서 255번 버스 탑승<br>
+                            '제주신화월드' 정류장 하차│테마파크의 경우 '제주신화월드 테마파크' 하차
+                        </p>
+                    </div>
+                    <div class="parking">
+                        <a href="#void">주차장 안내</a>
+                        <p>
+                            <a href="#void"><b>리조트별 주차장 및 전기차 충전 안내 바로가기</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="section fp-auto-height">
+        <div class="footWrap">
+            <div class="footTop">
+                <p class="footLogo">
+                    <img src="images/footLogo.png" alt="푸터로고">
+                </p>
+                <ul class="company">
+                    <li><a href="continue.html">회사소개</a></li>
+                    <li><a href="map.html">오시는길</a></li>
+                    <li><a href="continue.html">FAQ</a></li>
+                    <li><a href="continue.html">지원센터</a></li>
+                    <li><a href="continue.html">공지사항</a></li>
+                    <li><a href="continue.html">인재채용</a></li>
+                    <li><a href="continue.html">뉴스</a></li>
+                    <li><a href="continue.html">입점문의</a></li>
+                    <li><a href="continue.html">사이트맵</a></li>
+                </ul>
+            </div>
+            <div class="footBottom clearFix">
+                <ul class="footMenu">
+                    <li><a href="continue.html">개인정보처리방침</a></li>
+                    <li><a href="continue.html">면책고지</a></li>
+                    <li><a href="continue.html">홈페이지이용약관</a></li>
+                    <li><a href="continue.html">신화리워드 이용 약관</a></li>
+                    <li><a href="continue.html">결산공고</a></li>
+                </ul>
+                <address>
+                    <p>람정제주개발주식회사 | 대한민국 제주특별자치도 서귀포시 안덕면 녹차분재로 217 (우편번호 63521)</p>
+                    <span>대표이사: 린촉추 | 사업자등록번호: 616-86-09829 | 통신판매업신고번호: 2017-안덕면-0024</span>
+                    <span class="copyright">Copyright&copy;Landing Jeju Development Co.Ltd. All Rights Reserved</span>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/sub.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dbdc30dd6ab78a6cec029264ba768e45">
+    </script>
+    <script>
+        var mapContainer = document.getElementById('mapLoad'),
+            mapOption = {
+                center : new kakao.maps.LatLng(33.3075638, 126.3176387),
+                level: 4 //
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var imageSrc = 'images/marker.png',    
+            imageSize = new kakao.maps.Size(60, 60),
+            imageOption = { offset: new kakao.maps.Point(19, 60) };
+
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            markerPosition = new kakao.maps.LatLng(33.3075638, 126.3176387); // 마커가 표시될 위치입니다
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition,
+            image: markerImage
+        });
+        marker.setMap(map);  
+    </script>
+</body>
+</html>
